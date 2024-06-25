@@ -7,7 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
+<body><script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDCKqK9b9e4LXdvk6IbeWARFIdZRVrS2JQ",
+    authDomain: "app-videos-d8a6f.firebaseapp.com",
+    projectId: "app-videos-d8a6f",
+    storageBucket: "app-videos-d8a6f.appspot.com",
+    messagingSenderId: "315538386479",
+    appId: "1:315538386479:web:0f6d91ca21439a2e9960da"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
   <app-root></app-root>
 </body>
 </html>

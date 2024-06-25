@@ -1,0 +1,16 @@
+<div>
+    <h2>Movie List</h2>
+    <div>
+      <label for="genre">Filter by Genre:</label>
+      <select id="genre" (change)="filterMovies($event)">
+        <option *ngFor="let genre of genres">{{ genre }}</option>
+      </select>
+    </div>
+    <div *ngFor="let movie of filteredMovies">
+      <h3>{{ movie.title }}</h3>
+      <img [src]="movie.posterUrl" alt="{{ movie.title }}">
+      <p>{{ movie.description }}</p>
+      <video controls [src]="movie.videoUrl" width="600"></video>
+    </div>
+  </div>
+  
