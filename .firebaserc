@@ -1,8 +1,5 @@
 {
   "projects": {
-    "videos-production": "b-d-p-videos"
-  },
-  "targets": {},
-  "etags": {},
-  "dataconnectEmulatorConfig": {}
+    "default": "videos-3er-parcial"
+  }
 }
